@@ -109,9 +109,9 @@ If you find this project interesting and inspiring, please consider showing your
 
 
 
+# Deployment using DevSecOps principles
 
-
-# 🌍 Wanderlust - DevSecOps CI/CD Project
+#  Wanderlust - DevSecOps CI/CD Project
 
 A **Full Stack Travel Listing Platform** built using the **MERN Stack** and deployed using a complete **DevSecOps CI/CD pipeline**.
 
@@ -119,7 +119,7 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 
 ---
 
-# 🚀 Features
+# Features
 
 - Travel listing platform
 - User authentication
@@ -131,7 +131,7 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 
 ---
 
-# 🏗️ Tech Stack
+# Tech Stack
 
 ## Frontend
 - React.js
@@ -148,7 +148,7 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 
 ---
 
-# ⚙️ DevOps & DevSecOps Tools
+# DevOps & DevSecOps Tools
 
 - GitHub (Source Control)
 - Jenkins (CI/CD Pipeline)
@@ -164,14 +164,21 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 # 🏛️ System Architecture
 
 User
+---
 ↓
+---
 React Frontend
 ↓
+---
 Node.js / Express Backend
+---
 ↓
 Redis Cache
+---
 ↓
 MongoDB Database
+
+---
 
 
 
@@ -197,7 +204,7 @@ Pipeline stages include:
 
 ---
 
-# 🔍 Security Scanning
+# Security Scanning
 
 Security is integrated at multiple levels in the pipeline.
 
@@ -246,7 +253,7 @@ Detects:
 
 ---
 
-# 🐳 Docker Images
+# Docker Images
 
 Docker images created in the pipeline:
 
@@ -265,7 +272,7 @@ docker.io/lucky0111/wanderlust-front:v2
 
 ---
 
-# 🚀 Deployment
+#  Deployment
 
 Deployment is handled using **Docker Compose**.
 
@@ -285,7 +292,7 @@ docker-compose up -d
 
 ---
 
-# 📊 Pipeline Tools Integration
+#  Pipeline Tools Integration
 
 | Tool | Purpose |
 |-----|------|
@@ -298,36 +305,18 @@ docker-compose up -d
 
 ---
 
-# 📸 Screenshots
 
-Add screenshots of:
-
-- Jenkins Pipeline
-- ![Preview Image](C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011138.png)
-  
-- SonarQube Dashboard
- ![Preview Image](C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011013.png)
-- OWASP Scan
-   ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011119.png")
-- Trivy Scan
-  ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 143321.png")
-- Application UI
-  ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 121924.png")
-
----
-
-# 🧠 Key DevOps Concepts Demonstrated
+#  Key DevOps Concepts Demonstrated
 
 - CI/CD Automation
 - DevSecOps Pipeline
 - Containerization
-- Infrastructure Automation
 - Security Scanning
 - Automated Deployment
 
 ---
 
-# 📌 Future Improvements
+#  Future Improvements
 
 - Kubernetes deployment
 - Helm charts
