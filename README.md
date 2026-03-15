@@ -131,6 +131,7 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 
 ---
 
+
 # Tech Stack
 
 ## Frontend
@@ -160,33 +161,73 @@ This project demonstrates how modern DevOps tools can be integrated with securit
 - Docker Hub (Image Registry)
 
 ---
+## DevSecOps Architecture – Wanderlust Project
 
-# 🏛️ System Architecture
+The following diagram represents the **DevSecOps CI/CD workflow** used in the Wanderlust project.
 
-User
+```
+                Developer
+                    │
+                    │ Push Code
+                    ▼
+             GitHub Repository
+                    │
+                    ▼
+              Jenkins Pipeline
+                    │
+                    │
+     ┌──────────────┼─────────────────┐
+     │              │                 │
+     ▼              ▼                 ▼
+Install Dependencies   SonarQube   OWASP Dependency
+(frontend/backend)      Scan        Vulnerability Scan
+     │                                    │
+     └──────────────┬─────────────────────┘
+                    ▼
+               Quality Gate
+                    │
+                    ▼
+            Docker Image Build
+                    │
+                    ▼
+               Trivy Scan
+                    │
+                    ▼
+          Push Image to DockerHub
+                    │
+                    ▼
+           Deploy with Docker Compose
+                    │
+                    ▼
+               Running Containers
+             (Frontend + Backend)
+```
+
+### Explanation
+
+1. **Developer** pushes the code to the GitHub repository.
+2. **Jenkins Pipeline** is triggered to start the CI/CD workflow.
+3. The pipeline installs **frontend and backend dependencies**.
+4. **SonarQube** performs static code analysis to detect bugs, vulnerabilities, and code smells.
+5. **OWASP Dependency Check** scans project dependencies for known security vulnerabilities.
+6. **Quality Gate** verifies whether the code meets the required quality standards.
+7. If the quality gate passes, **Docker images** for the frontend and backend are built.
+8. **Trivy** scans Docker images and the filesystem for vulnerabilities.
+9. The images are then **pushed to Docker Hub**.
+10. Finally, the application is **deployed using Docker Compose**, running frontend and backend containers.
+
+This architecture demonstrates a **complete DevSecOps workflow**, integrating CI/CD automation, code quality analysis, security scanning, containerization, and automated deployment.
+
+
+
+
+
+
+
+
 ---
-↓
----
-React Frontend
-↓
----
-Node.js / Express Backend
----
-↓
-Redis Cache
----
-↓
-MongoDB Database
 
----
-
-
-
-
-
----
-
-# 🔄 CI/CD Pipeline Flow
+#  CI/CD Pipeline Flow
 
 The CI/CD pipeline is implemented using **Jenkins**.
 
