@@ -325,7 +325,7 @@ docker-compose up -d
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Anas Mansuri**
 
