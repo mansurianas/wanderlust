@@ -104,3 +104,247 @@ Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlus
 If you find this project interesting and inspiring, please consider showing your support by starring it on GitHub! Your star goes a long way in helping me reach more developers and encourages me to keep enhancing the project.
 
 🚀 Feel free to get in touch with me for any further queries or support, happy to help :)
+
+
+
+
+
+
+
+# 🌍 Wanderlust - DevSecOps CI/CD Project
+
+A **Full Stack Travel Listing Platform** built using the **MERN Stack** and deployed using a complete **DevSecOps CI/CD pipeline**.
+
+This project demonstrates how modern DevOps tools can be integrated with security scanning to automate application build, testing, containerization, and deployment.
+
+---
+
+# 🚀 Features
+
+- Travel listing platform
+- User authentication
+- Create and manage listings
+- Image uploads
+- Caching using Redis
+- Secure CI/CD pipeline
+- Containerized deployment
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- TailwindCSS
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- MongoDB
+- Redis (Caching)
+
+---
+
+# ⚙️ DevOps & DevSecOps Tools
+
+- GitHub (Source Control)
+- Jenkins (CI/CD Pipeline)
+- SonarQube (Code Quality Analysis)
+- OWASP Dependency Check (Vulnerability Scan)
+- Trivy (Container Security Scan)
+- Docker (Containerization)
+- Docker Compose (Deployment)
+- Docker Hub (Image Registry)
+
+---
+
+# 🏛️ System Architecture
+
+User
+↓
+React Frontend
+↓
+Node.js / Express Backend
+↓
+Redis Cache
+↓
+MongoDB Database
+
+
+
+
+
+---
+
+# 🔄 CI/CD Pipeline Flow
+
+The CI/CD pipeline is implemented using **Jenkins**.
+
+Pipeline stages include:
+
+1️⃣ Clone Code from GitHub  
+2️⃣ Install Dependencies  
+3️⃣ Static Code Analysis using SonarQube  
+4️⃣ Sonar Quality Gate Check  
+5️⃣ OWASP Dependency Vulnerability Scan  
+6️⃣ Docker Image Build  
+7️⃣ Trivy Security Scan  
+8️⃣ Push Images to Docker Hub  
+9️⃣ Deployment using Docker Compose  
+
+---
+
+# 🔍 Security Scanning
+
+Security is integrated at multiple levels in the pipeline.
+
+### Static Code Analysis
+Tool used:
+
+Sonarqube
+
+
+
+Detects:
+- Code smells
+- Bugs
+- Security vulnerabilities
+- Code duplication
+
+---
+
+### Dependency Vulnerability Scan
+
+Tool used:
+
+OWASP Dependency Check
+
+
+
+Detects vulnerabilities in:
+- npm packages
+- third-party libraries
+
+---
+
+### Container Security Scan
+
+Tool used:
+
+Trivy 
+
+
+Detects:
+
+- OS vulnerabilities
+- Library vulnerabilities
+- Secret leaks
+- Misconfigurations
+
+---
+
+# 🐳 Docker Images
+
+Docker images created in the pipeline:
+
+wanderlust-back:v1
+wanderlust-front:v2
+
+
+Images pushed to Docker Hub:
+
+
+docker.io/lucky0111/wanderlust-back:v1
+docker.io/lucky0111/wanderlust-front:v2
+
+
+
+
+---
+
+# 🚀 Deployment
+
+Deployment is handled using **Docker Compose**.
+
+Services deployed:
+
+- Frontend Container
+- Backend Container
+- MongoDB
+- Redis
+
+Run the application using:
+docker-compose up -d
+
+
+
+
+
+---
+
+# 📊 Pipeline Tools Integration
+
+| Tool | Purpose |
+|-----|------|
+| Jenkins | CI/CD Automation |
+| SonarQube | Code Quality Analysis |
+| OWASP Dependency Check | Dependency Vulnerability Scan |
+| Trivy | Container Security Scan |
+| Docker | Containerization |
+| Docker Compose | Multi-container Deployment |
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of:
+
+- Jenkins Pipeline
+- ![Preview Image](C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011138.png)
+  
+- SonarQube Dashboard
+ ![Preview Image](C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011013.png)
+- OWASP Scan
+   ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 011119.png")
+- Trivy Scan
+  ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 143321.png")
+- Application UI
+  ![Preview Image]("C:\Users\wd894\OneDrive\Pictures\Screenshots\Screenshot 2026-03-15 121924.png")
+
+---
+
+# 🧠 Key DevOps Concepts Demonstrated
+
+- CI/CD Automation
+- DevSecOps Pipeline
+- Containerization
+- Infrastructure Automation
+- Security Scanning
+- Automated Deployment
+
+---
+
+# 📌 Future Improvements
+
+- Kubernetes deployment
+- Helm charts
+- GitHub Actions pipeline
+- Monitoring using Prometheus & Grafana
+
+---
+
+# 👨‍💻 Author
+
+**Anas Mansuri**
+
+
+GitHub  
+https://github.com/mansurianas
+
+---
+
+
+
